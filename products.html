@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All Products - Sweet Tooth</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #f8e3dd;
+      padding: 20px 0;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #8b4513;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #8b4513;
+      font-weight: 500;
+    }
+
+    .all-products {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .all-products h2 {
+      text-align: center;
+      color: #8b4513;
+      margin-bottom: 40px;
+    }
+
+    .category {
+      margin-bottom: 50px;
+    }
+
+    .category h3 {
+      color: #8b4513;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-info h4 {
+      color: #8b4513;
+      margin-bottom: 10px;
+    }
+
+    .product-info p {
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #8b4513;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #8b4513;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">Sweet Tooth</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="all-products">
+    <h2>All Products</h2>
+
+    <!-- Cakes -->
+    <div class="category">
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="cakes.jpg" alt="Cakes">
+          </div>
+          <div class="product-info">
+            <h4>Cakes</h4>
+            <p>Indulge in our deliciously moist and decadent cakes, perfect for every celebration or sweet craving.</p>
+            <span class="price">Starting from ₹400 
+            </span>
+          </div>
+        </div>
+    <!--cupcakes -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="cupcakes.jpg" alt="cup Cake">
+          </div>
+          <div class="product-info">
+            <h4>Cup Cakes</h4>
+            <p>Fluffy and frosted to perfection, our cupcakes come in a variety of delightful flavors to sweeten any moment.</p>
+            <span class="price">Starting from ₹ 150</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cheesecakes -->
+    <div class="category">
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="cheesecakes.jpg" alt="Cheesecake">
+          </div>
+          <div class="product-info">
+            <h4>Cheesecakes</h4>
+            <p>Classic rich and creamy cheesecakes.</p>
+            <span class="price">Starting from ₹300 </span>
+          </div>
+        </div>
+    <!-- donuts -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="donuts.jpg" alt="donuts">
+          </div>
+          <div class="product-info">
+            <h4>Donuts</h4>
+            <p>Soft, fluffy, and glazed to perfection — our donuts are the perfect anytime treat.
+            </p>
+            <span class="price">Starting from ₹150</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cookies -->
+    <div class="category">
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="cookies.jpg" alt="Cookies">
+          </div>
+          <div class="product-info">
+            <h4>Cookies</h4>
+            <p>Freshly baked with a golden crunch and gooey centers — our cookies are the ultimate comfort snack.</p>
+            <span class="price">Starting from ₹80</span>
+          </div>
+        </div>
+ <!-- brownies -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="brownies.jpg" alt="brownies">
+          </div>
+          <div class="product-info">
+            <h4>Brownies</h4>
+            <p>Decadent, fudgy brownies that melt in your mouth.</p>
+            <span class="price">Starting from ₹200</span>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Mousse -->
+   <div class="category">
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="mousse.jpg" alt="Mousse">
+          </div>
+          <div class="product-info">
+            <h4>Mousses</h4>
+            <p>Light, creamy, and irresistibly smooth — our mousse is a spoonful of luxury.</p>
+            <span class="price">Starting from ₹200</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="tarts.jpg" alt="Tarts">
+          </div>
+          <div class="product-info">
+            <h4>Tarts</h4>
+            <p>Buttery crusts filled with luscious creams or fresh fruits — our tarts are a perfect bite of elegance.</p>
+            <span class="price">Starting from ₹80</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Sweet Delights Bakery. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+<!--tarts&mousse -->
